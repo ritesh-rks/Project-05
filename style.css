@@ -1,133 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.navbar{
-    display: grid;
-    grid-template-columns: 1fr 1fr 8fr 2fr;
-    background-color: #000000;
-    align-items: center;
-    padding: 1rem 0 0.5rem 3rem;
-    min-height: 10vh;
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 2fr;
+  background-color: #000000;
+  align-items: center;
+  padding: 1rem 0 0.5rem 3rem;
+  min-height: 10vh;
 }
-.logo{
-    width: 90%;
-    cursor: pointer;
+.logo {
+  width: 90%;
+  cursor: pointer;
 }
 
 .line {
-    height: 90%;
-    width: 2px;
-    background-color: #fff;
-    margin-left: 4rem;
+  height: 90%;
+  width: 2px;
+  background-color: #fff;
+  margin-left: 4rem;
 }
-.list{
-    list-style-type: none;
+.list {
+  list-style-type: none;
 }
-.list-item{
-    display: inline;
-    color: #fff;
-    margin-left: 2rem;
-    cursor: pointer;
+.list-item {
+  display: inline;
+  color: #fff;
+  margin-left: 2rem;
+  cursor: pointer;
 }
-.button-small{
-    padding: 5px 10px;
-    color: #fff;
-    background-color: #8D3DAF;
-    border: none;
-    cursor: pointer;
+.button-small {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #8d3daf;
+  border: none;
+  cursor: pointer;
 }
 /* Hero section */
-.hero{
-    min-height: 90vh;
-    background: url(assets/bg.png)
-    no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.hero {
+  min-height: 90vh;
+  background: url(assets/bg.png) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.hero-heading{
-    font-size: 6rem;
-    color: #ffffff;
-}
-
-.hero-description{
-    color: #ffffff;
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+.hero-heading {
+  font-size: 6rem;
+  color: #ffffff;
 }
 
-.button-large{
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #8D3DAF;
-    font-size: 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.hero-description {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.button-large {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #8d3daf;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Media query */
-@media (max-width: 900px){
-
-    .hero-heading{
-        font-size: 4rem;
-    }
-    .hero-description{
-        font-size: 1rem;
-    }
-
+@media (max-width: 900px) {
+  .hero-heading {
+    font-size: 4rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 835px){
-
-   
-    .navbar{
-      display: flex;
-      flex-direction: column;
-    }
-    .list{
-       margin-top: 1rem;
-       margin-bottom:1rem;
-    }
-
+@media (max-width: 835px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
-@media (max-width: 628px){
-    .container{
-        min-height: 100vh;
-    background: url(assets/bg.png)
-    no-repeat center center fixed;
+@media (max-width: 628px) {
+  .container {
+    min-height: 100vh;
+    background: url(assets/bg.png) no-repeat center center fixed;
     background-size: cover;
-    }
+  }
 
-   .navbar{
+  .navbar {
     text-align: center;
     background: none;
-    min-width: 0;
-   } 
+    min-height: 0;
+    padding: 1rem 0;
+  }
+  .line {
+    display: none;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .list-item {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 
-   .hero{
+  .hero {
     background: none;
-    min-width: 0;
-   }
-    .list{
-       display: flex;
-       flex-direction: column;
-       margin-top: 0;
-    }
-    .list-item{
-        margin-top: 1rem;
-    }
-    .button-small{
-        margin-left: 1.2rem;
-    }
-
+    min-height: 0;
+    padding: 1rem;
+  }
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  .hero-description {
+    font-size: 0.8rem;
+  }
+  .button-large {
+    font-size: 1rem;
+  }
 }
